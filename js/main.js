@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(document).ready(function() {
     var
     el = $('.element'),
     box_width = 249;
