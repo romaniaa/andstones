@@ -18,7 +18,8 @@ html, body {
     display: inline-block;
 }
 
-.nav_logo{
-  max-width:90px;
+.nav_logo {
+    max-width: 90px;
+    margin: 15px;
 }
 /* - Testing some CSS  -*/
