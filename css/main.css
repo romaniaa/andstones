@@ -90,6 +90,7 @@ body {
     background: #00000030;
     color: #000;
     z-index: 99;
+    pointer-events: none;
 }
 #contact .content {
     position: absolute;
