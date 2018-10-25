@@ -89,10 +89,10 @@ body {
     height: 100vh;
     background: #00000030;
     color: #000;
-    z-index: 999;
 }
 #contact .content {
     position: absolute;
+    z-index: 999;
 }
 #and_contact {
       bottom: 10px;
