@@ -14,28 +14,51 @@
 
 </head>
 <body>
+  <div id="street-view"></div>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
 
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-</div>
+      <div id="contact">
+        <div class="content">
+            <p>these words should look like they stick</p>
+        </div>
+      </div>
+       
+  <div id="main_nav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
 
-</head>
-  <body>
-
-    </div>
+<div id="hero" class="andhero">
 
     <div class="logo"><img src="assets/images/Ampersand_logo.png" alt"&stones Agency" class="nav_logo"></div>
+    <div class="hero_message" id="message_fade">
+      <h1>We're a Full Service Digital Agency.</h1>
+    </div>
+</div>
+
+    <div id="and_contact" class="tbd">
+      <p>Contact Us:</p>
+      <p>123 Road Street.</p>
+      <p>Postal Code</p>
+    </div>
 
 
-        <div id="street-view"></div>
+    <section class="videos">
+
+      </section>
+
+  </body>
+<footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
         <script type="text/javascript">
         var panorama;
         function initialize() {
@@ -63,13 +86,9 @@
               });
         }
         </script>
-
         <script async defer
                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB4D08VGJmw39MLgLPvIFF0fHIrX4C8l0&callback=initialize">
             </script>
 
-          </div>
-
-  </body>
-
+</footer>
 </html>
