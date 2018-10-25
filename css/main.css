@@ -87,7 +87,7 @@ body {
 }
 #contact {
     height: 100vh;
-
+    background: #00000030;
     color: #000;
 }
 #contact .content {
