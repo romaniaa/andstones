@@ -94,6 +94,7 @@ body {
 }
 #contact .content {
     position: absolute;
+    pointer-events: all;
 }
 #and_contact {
       bottom: 10px;
@@ -359,7 +360,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     top: 0;
     right: 0;
     background-color: red;
@@ -396,6 +397,7 @@ body {
 /* ==========================================================================
    Street View
    ========================================================================== */
+
 #street-view {
   height: 100%;
   opacity:0.5;
