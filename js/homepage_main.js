@@ -16,7 +16,7 @@ $(document).ready(function(){
 	var pinIntroScene = new ScrollMagic.Scene({
 		triggerElement: '#contact',
 		triggerHook: 0,
-		duration: '40%'
+		duration: '47%'
 	})
 	.setPin('#contact', {pushFollowers: false})
 	.addTo(controller);
