@@ -96,7 +96,7 @@ body {
 }
 #and_contact {
       bottom: 10px;
-      z-index: 6;
+      z-index: 999;
       max-width: 300px;
       margin: 25px;
       display: block;
