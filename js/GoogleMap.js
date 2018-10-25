@@ -11,7 +11,7 @@ function initialize() {
         showLocationMarker : false,
         disableDefaultUI : true,
         disableDoubleClickZoom : true,
-        draggable : false,
+        draggable : true,
         keyboardShortcuts : false,
         mapTypeControl : false,
         mapMaker : false,
@@ -19,7 +19,7 @@ function initialize() {
         panControl : false,
         rotateControl : false,
         scaleControl : false,
-        scrollwheel : true,
+        scrollwheel : false,
         streetViewControl : false,
         zoomControl : false,
       });
