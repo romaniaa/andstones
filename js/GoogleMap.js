@@ -19,7 +19,7 @@ function initialize() {
         panControl : false,
         rotateControl : false,
         scaleControl : false,
-        scrollwheel : false,
+        scrollwheel : true,
         streetViewControl : false,
         zoomControl : false,
       });
