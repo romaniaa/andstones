@@ -387,17 +387,16 @@ body {
     top: 10px;
 }
 .sidenav {
-    height: 100%;
-    width: 0;
+    height: 0%;
+    width: 100%;
     position: fixed;
     z-index: 99999;
     top: 0;
     right: 0;
     background-color: red;
     overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 30px;
-    margin-top: 20px;
+    transition: 0.3s;
+
 }
 
 .sidenav a {
@@ -407,6 +406,9 @@ body {
     color: #a71800;
     display: block;
     transition: 0.3s;
+    transition: transform .8s,opacity .8s;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .sidenav a:hover {
@@ -419,13 +421,19 @@ body {
   visibility: in3visible;
 }
 .sidenav .closebtn {
-    top: -10px;
-    right: 0px;
+    top: 10px;
+    right: 25px;
     font-size: 36px;
+    float: right;
+    display: block;
+    position: relative;
 }
-
+.and_nav{
+    top: 60px;
+    position: relative;
+}
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 0px;}
   .sidenav a {font-size: 18px;}
 }
 
