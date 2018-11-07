@@ -102,7 +102,7 @@ body {
 /* ==========================================================================
    Custom Styles
    ========================================================================== */
-/* =Main */
+/* Main */
 #intro {
     height: 100vh;
     background: #000;
@@ -137,7 +137,6 @@ body {
 .project {
     text-align: left;
     padding: 100px 0;
-    border-bottom: 2px #313131 solid;
     opacity: 0;
     /*transform: translateY(50px);*/
     transition: all 1s ease-out;
@@ -157,17 +156,34 @@ body {
 }
 .project p {
     margin: 0 auto;
-    color: #ffffff59;
+    color: #b7b7b7;
+    margin-left:90px;
 }
 .project h2 {
-    color: #ff3300;
-    font-size:2.5em;
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left:90px;
+}
+.project h5 {
+    font-size: .83em;
+    margin: 0px;
+    color: #5f5f5f;
+    max-width: 90px;
+    text-align: right;
+    font-weight: lighter;
+}
+.redline{
+    color: rgb(223, 2, 10);
+    margin-left: 75px;
 }
 #main {
     position: relative;
-    background-color: #000;
     z-index:999;
-}
+    background: #000;
+  }
+
 .col-1, .col-2{
   width:inherit;
   padding: 0px 20px;
@@ -178,7 +194,7 @@ body {
 .vid .col-2{
   width:110%;
 }
-.arrow {
+/*.arrow {
     position: relative;
     }
 .arrow::before {
@@ -208,7 +224,7 @@ body {
 *, :after, :before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
-}
+}*/
 
 /* Accolades */
 
@@ -265,11 +281,10 @@ body {
 .footer-container a {
     color: rgba(255, 255, 255, 0.5);
 }
-.max_width{
-    width: 1300px;
-    margin: auto;
-
-}
+.max_width {
+    width: 1200px;
+    margin-left: calc(11% - 45px);
+  }
 
 
 /* ==========================================================================
@@ -434,95 +449,6 @@ body {
 }
 
 /* ==========================================================================
-   Hero Section
-   ========================================================================== */
-
-.logo {
-    position: relative;
-    z-index: 99;
-    display: inline-block;
-}
-.nav_logo {
-    max-width: 90px;
-    margin: 15px;
-}
-.hero_message {
-    position: relative;
-    z-index: 2;
-    max-width: 300px;
-    margin: 25px;
-}
-.hero_message h1 {
-    color: #fff;
-    font-weight: lighter;
-}
-.hero-links{
-  margin-right:5px;
-}
-/* ==========================================================================
-   Sidebar Navigation
-   ========================================================================== */
-
-#main_nav{
-    margin-left: 0px;
-    position: fixed;
-    float: right;
-    right: 25px;
-    z-index: 9999;
-    top: 10px;
-}
-.sidenav {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    right: 0;
-    background-color: red;
-    overflow-x: hidden;
-    transition: 0.3s;
-
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 45px;
-    color: #a71800;
-    display: block;
-    transition: 0.3s;
-    transition: transform .8s,opacity .8s;
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.sidenav a:hover {
-    color: #fff;
-}
-.sidenav a:before{
-  content:none;
-}
-.sidenav a:hover:before{
-  visibility: in3visible;
-}
-.sidenav .closebtn {
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    float: right;
-    display: block;
-    position: relative;
-}
-.and_nav{
-    top: 60px;
-    position: relative;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 0px;}
-  .sidenav a {font-size: 18px;}
-}
-
-/* ==========================================================================
    Street View
    ========================================================================== */
 
@@ -540,42 +466,3 @@ body {
   left: 0;
   z-index: 1;
 }
-
-/* ==========================================================================
-   Carousel
-   ========================================================================== */
-
-   .carousel {
-       overflow: hidden;
-       text-align: center;
-   }
-
-   .carousel > * {
-       position: relative;
-       width: 100%;
-       height: 100%;
-       display: table;
-       top: 0;
-       bottom: 0;
-       left: 0;
-       right: 0;
-       opacity: 0;
-       z-index: 0;
-       transition: opacity 1.4s ease-in-out;
-   }
-
-   .carousel > *.isActive {
-       opacity: 1;
-       z-index: 1;
-   }
-
-
-   .carousel > * > * {
-       display: table-cell;
-       vertical-align: middle;
-   }
-
-   .carousel > * > * > * {
-       max-width: 669px;
-       margin: 0 auto;
-   }
