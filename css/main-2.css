@@ -309,6 +309,16 @@ body {
   .vid .col-2 {
     width: 90%;
 }
+.redline {
+    margin-left: 0px;
+}
+.project h5{
+      text-align:left;
+}
+.project h2, .project p {
+  margin-left: 0px;
+}
+
 }
 
 @media only screen and (min-width: 1140px) {
