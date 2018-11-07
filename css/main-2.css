@@ -1,0 +1,581 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #efefef;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/* ===== ScrollMagic Class ==============================================
+
+   ========================================================================== */
+
+
+body {
+    font: 16px/1.5 'Gotham SSm A', 'Gotham SSm B';
+    color: #e6e6e6;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ==========================================================================
+   Custom Styles
+   ========================================================================== */
+/* =Main */
+#intro {
+    height: 100vh;
+    background: #000;
+    text-align: center;
+    color: #fff;
+}
+#intro .content {
+    position: absolute;
+
+}
+#contact {
+    height: 100vh;
+    background: #00000030;
+    color: #fff;
+    z-index: 99;
+    pointer-events: none;
+}
+#contact .content {
+    position: absolute;
+    pointer-events: all;
+}
+#and_contact {
+    text-align: left;
+    z-index: 999;
+    max-width: 300px;
+    margin: 25px;
+    display: block;
+    position: absolute;
+    color: #fff;
+    line-height: 10px;
+}
+.project {
+    text-align: left;
+    padding: 100px 0;
+    border-bottom: 2px #313131 solid;
+    opacity: 0;
+    /*transform: translateY(50px);*/
+    transition: all 1s ease-out;
+    display: flex;
+    flex-direction:row;
+    max-width:1300px;
+    margin:auto;
+}
+.project.fade-in {
+    opacity: 1;
+    /*transform: translateY(0);*/
+}
+.project img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.project p {
+    margin: 0 auto;
+    color: #ffffff59;
+}
+.project h2 {
+    color: #ff3300;
+    font-size:2.5em;
+}
+#main {
+    position: relative;
+    background-color: #000;
+    z-index:999;
+}
+.col-1, .col-2{
+  width:inherit;
+  padding: 0px 20px;
+  display:flex;
+  flex-direction: column;
+  max-width:60%;
+}
+.vid .col-2{
+  width:110%;
+}
+.arrow {
+    position: relative;
+    }
+.arrow::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3.5em;
+    height: 8em;
+    top: 0;
+    left: -2em;
+    background-image: url(images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    }
+.arrow:hover::before {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Accolades */
+
+.accolades {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    opacity: 0.5;
+    align-items: baseline;
+    margin-left: auto;
+}
+.accolades img{
+  padding: 0px 5px;
+}
+.ace {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+.ace_sml {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+.anvil{
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+.tall{
+    width: 100%;
+    max-width: 32px;
+    height: auto;
+}
+
+/* Footer */
+
+.footer-container {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #06060d;
+}
+.footer-container .wrapper {
+    width: 80%;
+    max-width: none;
+    margin: 0 10%;
+}
+.footer-container h3 {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: normal;
+}
+.footer-container a {
+    color: rgba(255, 255, 255, 0.5);
+}
+.max_width{
+    width: 1300px;
+    margin: auto;
+
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* =General */
+
+    /* =Header */
+
+    /* =Footer */
+}
+
+@media only screen and (max-width: 1100px) {
+  .project {
+      flex-direction:column;
+  }
+  .col-1, .col-2{
+    max-width:100%;
+  }
+  .vid .col-2 {
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 1140px) {
+    /* =General */
+
+    /* =Header */
+
+    /* =Footer */
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.logo {
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+}
+.nav_logo {
+    max-width: 90px;
+    margin: 15px;
+}
+.hero_message {
+    position: relative;
+    z-index: 2;
+    max-width: 300px;
+    margin: 25px;
+}
+.hero_message h1 {
+    color: #fff;
+    font-weight: lighter;
+}
+.hero-links{
+  margin-right:5px;
+}
+/* ==========================================================================
+   Sidebar Navigation
+   ========================================================================== */
+
+#main_nav{
+    margin-left: 0px;
+    position: fixed;
+    float: right;
+    right: 25px;
+    z-index: 9999;
+    top: 10px;
+}
+.sidenav {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    background-color: red;
+    overflow-x: hidden;
+    transition: 0.3s;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #a71800;
+    display: block;
+    transition: 0.3s;
+    transition: transform .8s,opacity .8s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+.sidenav a:before{
+  content:none;
+}
+.sidenav a:hover:before{
+  visibility: in3visible;
+}
+.sidenav .closebtn {
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    float: right;
+    display: block;
+    position: relative;
+}
+.and_nav{
+    top: 60px;
+    position: relative;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 0px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* ==========================================================================
+   Street View
+   ========================================================================== */
+
+#street-view {
+  height: 100%;
+  min-height: 400px;
+  opacity:0.5;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 100%;
+  position: relative;
+  background-color: rgb(229, 227, 223);
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Carousel
+   ========================================================================== */
+
+   .carousel {
+       overflow: hidden;
+       text-align: center;
+   }
+
+   .carousel > * {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       display: table;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       opacity: 0;
+       z-index: 0;
+       transition: opacity 1.4s ease-in-out;
+   }
+
+   .carousel > *.isActive {
+       opacity: 1;
+       z-index: 1;
+   }
+
+
+   .carousel > * > * {
+       display: table-cell;
+       vertical-align: middle;
+   }
+
+   .carousel > * > * > * {
+       max-width: 669px;
+       margin: 0 auto;
+   }
