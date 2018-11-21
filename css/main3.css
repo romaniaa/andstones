@@ -14,12 +14,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #26262c;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #26262c;
     text-shadow: none;
 }
 
@@ -70,7 +70,7 @@ a:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #26262c;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -104,7 +104,7 @@ body {
 /* =Main */
 #intro {
     height: 100vh;
-    background: #000;
+    background: #26262c;
     text-align: center;
     color: #fff;
 }
@@ -202,7 +202,7 @@ body {
     text-align: center;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
-    background-color: #06060d;
+    background-color: #26262c;
 }
 .footer-container .wrapper {
     width: 80%;
@@ -399,7 +399,7 @@ body {
    #main {
        position: relative;
        z-index:999;
-       background: #000;
+       background: #26262c;
      }
   .col-1{
     max-width:30%;
@@ -472,7 +472,7 @@ body {
     text-decoration: none;
     font-size: 4.5em;
     line-height:1em;
-    color: #000000;
+    color: #fff;
     display: block;
     transition: 0.3s;
     transition: transform .8s,opacity .8s;
@@ -482,7 +482,7 @@ body {
     font-weight: 900;
 }
 .sidenav a:hover {
-    color: #fff;
+    color: #26262c;
 }
 .sidenav a:before{
   content:none;
@@ -491,7 +491,7 @@ body {
   visibility: in3visible;
 }
 .sidenav .closebtn {
-    top: 10px;
+    top: calc( 50% - 20px);
     right: 25px;
     font-size: 36px;
     float: right;
@@ -501,8 +501,14 @@ body {
 }
 .and_nav {
     top: calc(20% - 45px);
-    position: relative;
+    position: absolute;
     z-index: 999;
+}
+.and_nav a{
+  color:#fff;
+}
+.and_nav a:hover{
+  color:#26262c;
 }
 .and_contact{
   padding-top:20px;
@@ -512,6 +518,7 @@ body {
   line-height: 1em;
   font-weight:500;
   color:#fff;
+  text-transform: uppercase;
   margin:0px;
 }
 .and_contact a {
@@ -521,11 +528,19 @@ body {
     font-weight: 500;
 }
 .and_contact a:hover{
-  color:#000;
+  color:#26262c;
 }
 .and_logo{
     max-height: 65px;
     padding: 30px 0px;
+}
+.copyright{
+      position: absolute;
+      bottom: 10px;
+      left: 40px;
+      font-weight: lighter;
+      display: block;
+      min-width: 400px;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 0px;}

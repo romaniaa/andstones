@@ -9,7 +9,7 @@
     if (x.matches) { // If media query matches
             document.getElementById("mySidenav").style.width = "90%";
         } else {
-            document.getElementById("mySidenav").style.width = "50%";
+            document.getElementById("mySidenav").style.width = "30%";
         }
       document.getElementById("main_nav").style.marginLeft = "-30px";
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
